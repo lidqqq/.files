@@ -18,8 +18,14 @@ alias rebase='git rebase'
 alias reset='git reset'
 alias s='git status -s'
 alias stash='git stash'
-alias nr="npm run"
 alias acw="git add . && git commit -m \":dog:\""
+
+# npm
+alias nr="npm run"
+alias nt="npm test"
+alias nv="npm run dev"
+alias nb="npm run build"
+alias ns="npm run start"
 
 ## docker
 alias d='docker'
@@ -58,3 +64,6 @@ init_repo() {
   git add -A
   git commit -m "Initial commit"
 }
+
+# https://github.com/shannonmoeller/up
+source ~/.config/up/up.sh
