@@ -23,7 +23,7 @@ alias acw="git add . && git commit -m \":dog:\""
 # npm
 alias nr="npm run"
 alias nt="npm test"
-alias nv="npm run dev"
+alias nd="npm run dev"
 alias nb="npm run build"
 alias ns="npm run start"
 
