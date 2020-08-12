@@ -26,6 +26,7 @@ alias nt="npm test"
 alias nd="npm run dev"
 alias nb="npm run build"
 alias ns="npm run start"
+alias ne="npm exec"
 
 ## docker
 alias d='docker'
@@ -58,9 +59,9 @@ init_repo() {
   mkdir $1 && cd $_
   git init
   npm init -y
-  npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
-  npx gitignore node
-  npx covgen "$(npm get init.author.email)"
+  npm exec --no -y license $(npm get init.license) -o "$(npm get init.author.name)"
+  npm exec --no -y gitignore node
+  npm exec --no -y covgen "$(npm get init.author.email)"
   git add -A
   git commit -m "Initial commit"
 }
