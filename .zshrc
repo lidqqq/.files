@@ -57,12 +57,12 @@ done
 init_repo() {
   # delete any of the below per your preference
   mkdir $1 && cd $_
+  echo \# $1 > README.md
   git init
   npm init -y
   npx license $(npm get init.license) -o "$(npm get init.author.name)"
   npx gitignore node
   npx covgen "$(npm get init.author.email)"
-  echo \# $1 > README.md
   git add -A
   git commit -m "Initial commit"
 }
