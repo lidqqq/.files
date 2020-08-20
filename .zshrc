@@ -59,9 +59,10 @@ init_repo() {
   mkdir $1 && cd $_
   git init
   npm init -y
-  npm exec --no -y license $(npm get init.license) -o "$(npm get init.author.name)"
-  npm exec --no -y gitignore node
-  npm exec --no -y covgen "$(npm get init.author.email)"
+  npx license $(npm get init.license) -o "$(npm get init.author.name)"
+  npx gitignore node
+  npx covgen "$(npm get init.author.email)"
+  echo \# $1 > README.md
   git add -A
   git commit -m "Initial commit"
 }
