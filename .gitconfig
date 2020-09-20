@@ -11,3 +11,12 @@
 	logallrefupdates = true
 	ignorecase = true
 	precomposeunicode = true
+  	pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+[interactive]
+    diffFilter = delta --color-only
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[push]
+	default = current
