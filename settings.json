@@ -1,11 +1,13 @@
 {
-  "editor.fontFamily": "migu-1m-regular",
+  "editor.fontFamily": "migu-2m-regular",
   "editor.fontSize": 15,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.renderCharacters": false,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.snippetSuggestions": "top",
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
@@ -45,11 +47,11 @@
   "materialTheme.accent": "Sky",
   "prettier.singleQuote": true,
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shell.osx": "/bin/zsh",
-  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontFamily": "migu-2m-regular",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -60,5 +62,12 @@
   "workbench.colorTheme": "Material Theme High Contrast",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.javascript.suggestPrettyPrinting": false
 }
