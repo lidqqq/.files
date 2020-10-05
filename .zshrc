@@ -21,6 +21,7 @@ alias stash='git stash'
 alias acw="git add . && git commit -m \":dog:\""
 
 # npm
+alias npm="pnpm"
 alias nr="npm run"
 alias nt="npm test"
 alias nd="npm run dev"
